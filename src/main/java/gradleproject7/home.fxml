@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="1302.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="googledrive.homeController">
+   <children>
+      <BorderPane prefHeight="688.0" prefWidth="1302.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="597.0" prefWidth="315.0" spacing="10.0" style="-fx-background-color: #2262C6; -fx-background-radius: 0 60 0 0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="138.0" prefWidth="328.0">
+                     <children>
+                        <Button fx:id="upload" layoutX="55.0" layoutY="60.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="212.0" styleClass="button2" stylesheets="@../css/cobacss.css" text="Upload New FIle" />
+                     </children></Pane>
+                  <Button fx:id="btnmydrive" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="215.0" styleClass="button1" stylesheets="@../css/cobacss.css" text=" My Drive">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/drive-google-google-drive-icon-33.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="39.0" prefWidth="215.0" styleClass="button1" stylesheets="@../css/cobacss.css" text=" Computers">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/my-computer--v2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="39.0" prefWidth="215.0" styleClass="button1" stylesheets="@../css/cobacss.css" text=" Shared with me">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/groups.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="39.0" prefWidth="215.0" styleClass="button1" stylesheets="@../css/cobacss.css" text=" Recent">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/recent-icon-16.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="42.0" prefWidth="215.0" styleClass="button1" stylesheets="@../css/cobacss.css" text=" Starred">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/icons8-star-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="39.0" prefWidth="215.0" styleClass="button1" stylesheets="@../css/cobacss.css" text=" Trash" textOverrun="CLIP">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/Daco_5627622.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="39.0" prefWidth="215.0" styleClass="button1" stylesheets="@../css/cobacss.css" text=" Backups">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/2496447-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Pane prefHeight="123.0" prefWidth="328.0">
+                     <children>
+                        <Label layoutX="66.0" layoutY="14.0" text="Storage Details" textFill="WHITE" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <Pane prefHeight="91.0" prefWidth="1302.0" style="-fx-background-color: #fff;" styleClass="text-input" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="8.0" layoutY="14.0" prefHeight="64.0" prefWidth="1241.0" spacing="20.0">
+                     <children>
+                        <Pane prefHeight="103.0" prefWidth="0.0" />
+                        <ImageView fitHeight="51.0" fitWidth="62.0">
+                           <image>
+                              <Image url="@../icon/images%20(9).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="251.0" text="GOOGLE DRIVE DEKTOP">
+                           <font>
+                              <Font name="Gill Sans MT Bold" size="18.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="#6483ff" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Pane prefHeight="103.0" prefWidth="75.0" />
+                        <TextField alignment="BASELINE_LEFT" prefHeight="42.0" prefWidth="436.0" promptText="Search Drive" styleClass="text" stylesheets="@../css/cobacss.css">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </TextField>
+                        <Pane prefHeight="103.0" prefWidth="21.0" />
+                        <ImageView fitHeight="56.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="54.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+               </children></Pane>
+         </top>
+         <center>
+            <StackPane prefHeight="763.0" prefWidth="587.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <Pane prefHeight="551.0" prefWidth="974.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TableView layoutX="28.0" layoutY="8.0" prefHeight="428.0" prefWidth="924.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children></Pane>
+                     </center>
+                     <top>
+                        <Pane prefHeight="139.0" prefWidth="974.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Pane layoutX="206.0" layoutY="25.0" prefHeight="114.0" prefWidth="330.0" />
+                              <Label layoutX="23.0" layoutY="25.0" text="My Drive rizkydwisaputrar1@gmail.com" />
+                           </children></Pane>
+                     </top>
+                  </BorderPane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
