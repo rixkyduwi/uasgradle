@@ -1,8 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'jacoco'
 apply plugin: 'application'
-
-
+apply plugin: 'idea'
 mainClassName = 'gradleproject7.Main'
 
 sourceCompatibility = 1.8
@@ -12,7 +11,10 @@ version = '1.0'
 repositories {
     mavenCentral()
 }
-
+javafx {
+    sdk = '/path/to/javafx-sdk'
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
 dependencies {
     compile 'com.google.api-client:google-api-client:1.23.0'
     compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
